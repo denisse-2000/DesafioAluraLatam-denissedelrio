@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura-Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!--ENCABEZADO-->
+    <header class="header__logo__alura">
+        <img class="imagen__logo__alura" src="./assets/Logo.png" alt="Logo de Alura Latam">
+    </header>
+
+    <!--PRINCIPAL-->
+    <main class="main">
+
+        <section class="area__encriptador">
+            <div class="contenedor__area__texto">
+                <textarea id="texto__ingresado" name="text" placeholder="Ingrese el texto aqui" class="caja__texto"></textarea>
+            </div>
+
+            <div class="aviso__encriptador">
+                <img class="imagen__aviso__encriptador" src="./assets/bi_exclamation-circle-fill.png" 
+                alt="Logo exclamacion aviso">
+                <p class="texto__aviso__encriptador">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones__encriptador">
+                <button onclick="cajaMensajeUsuarioEncriptar();" class="btn__encriptar">Encriptar</button>
+                <button onclick="cajaMensajeUsuarioDesencriptar();" class="btn__desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="area__desencriptar">
+            <div class="contenedor__mono">
+                <img class="mono__desencriptado" src="./assets/Muñeco.png" alt="Mono en area texto desencriptado">
+            </div>
+
+            <div class="contenedor__parrafo">    
+                <h1 class="texto__error">Ningún mensaje fue encontrado</h1>
+                <p class="texto__aviso__error">Ingresa el texto que desees encripta o desencriptar</p>
+            </div>
+
+            <div class="contenedor__resultado">
+                <p3 id="texto__copiar" class="texto__resultado"></p3>
+            </div>
+            
+            <div class="contenedor__copiar">
+                <button onclick="copiarTexto();" id="copiar" class="btn__copiar" value="Copiar">Copiar</button>
+            </div>
+            
+        </section>
+
+    </main>
+    
+    <!--PIE DE PAGINA-->
+    <footer class="footer__personal">Desarrollado por Andrea Denisse Del Rio   2024</footer>
+    
+</body>
+<script src="script.js" defer></script>
+</html>
